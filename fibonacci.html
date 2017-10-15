@@ -10,12 +10,23 @@
 
         <script>
             //Generate fibonacci sequence less than equal num
-            function fibonacci(num) {
-                var fibonacci = [1];
+            // function fibonacci(num) {
+            //     var fibonacci = [1];
+            //
+            //     for (var i = 1; i <= num;) {
+            //         fibonacci.push(i);
+            //         i = fibonacci[fibonacci.length - 2] + fibonacci[fibonacci.length - 1];
+            //     }
+            //
+            //     return fibonacci;
+            // }
 
-                for (var i = 1; i <= num;) {
-                    fibonacci.push(i);
-                    i = fibonacci[fibonacci.length - 2] + fibonacci[fibonacci.length - 1];
+            //Generate fibonacci sequence by num.length
+            function fibonacci(num) {
+                var fibonacci = [1, 1];
+
+                for (var i = 2; i < num; i++) {
+                    fibonacci[i] = fibonacci[fibonacci.length - 2] + fibonacci[fibonacci.length - 1];
                 }
 
                 return fibonacci;
