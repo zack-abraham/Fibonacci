@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palindrome</title>
+    </head>
+    <body>
+        <h1>
+            Generate fibonacci sequence in console.log with fibonacci(number);
+        </h1>
+
+        <script>
+            //Generate fibonacci sequence less than equal num
+            function fibonacci(num) {
+                var fibonacci = [1];
+
+                for (var i = 1; i <= num;) {
+                    fibonacci.push(i);
+                    i = fibonacci[fibonacci.length - 2] + fibonacci[fibonacci.length - 1];
+                }
+
+                return fibonacci;
+            }
+        </script>
+    </body>
+</html>
