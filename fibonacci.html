@@ -1,36 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Palindrome</title>
-    </head>
-    <body>
-        <h1>
-            Generate fibonacci sequence in console.log with fibonacci(number);
-        </h1>
-
-        <script>
-            //Generate fibonacci sequence less than equal num
-            // function fibonacci(num) {
-            //     var fibonacci = [1];
-            //
-            //     for (var i = 1; i <= num;) {
-            //         fibonacci.push(i);
-            //         i = fibonacci[fibonacci.length - 2] + fibonacci[fibonacci.length - 1];
-            //     }
-            //
-            //     return fibonacci;
-            // }
-
-            //Generate fibonacci sequence by num.length
-            function fibonacci(num) {
-                var fibonacci = [1, 1];
-
-                for (var i = 2; i < num; i++) {
-                    fibonacci[i] = fibonacci[fibonacci.length - 2] + fibonacci[fibonacci.length - 1];
-                }
-
-                return fibonacci;
-            }
+        <title>Fibonacci</title>
+        <script type="text/javascript" src="js.js"></script>
+        <script type="text/javascript">
+        function toDoWhenPageReady() {
+            printFibToElement(30, "fibResult");
+            printFibToConsoleLog(30);
+        }
         </script>
+    </head>
+    
+    
+    <body>
+        <h1>Generate fibonacci sequence in console.log with fibonacci(number);</h1>
+        <div id="fibResult">The result of the JS will go here.</div>
     </body>
 </html>
