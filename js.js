@@ -13,7 +13,6 @@ function printFibToElement(limitNo, elementID) {
     var n = Number(limitNo);
     if (n < 1 || document.getElementById(elementID) == null || document.getElementById(elementID).innerHTML == null) return false;
     document.getElementById(elementID).innerHTML = "hello";
-    alert("hello in f1");
     document.getElementById(elementID).innerHTML = "";
     var n = Number(limitNo);
     for (var i = 0; i <= n; i++) {
@@ -22,7 +21,6 @@ function printFibToElement(limitNo, elementID) {
 }
 
 function printFibToConsoleLog(limitNo) {
-    alert("hello in f2");
     var n = Number(limitNo);
     for (var i = 0; i <= n; i++) {
         console.log(i + ": " + fibonacci(i) + "\n");
